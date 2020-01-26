@@ -1,0 +1,22 @@
+body {
+    background: $primary-bg;
+    font-family: $base-font-family;
+}
+
+.dark-gray {
+    background: #202020;
+    color: white;
+}
+.light-gray {
+
+}
+.orange {
+    background: $branding-yellow;
+    color: #000000;
+}
+.menu {
+    &__button {
+        background: transparent;
+        border: none;
+    }
+}

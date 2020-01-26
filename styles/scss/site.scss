@@ -1,0 +1,21 @@
+// //vendor
+@import "vendors/bootstrap/bootstrap.scss";
+
+
+
+//abstract
+@import "abstract/_variables.scss";
+@import "abstract/mixing.scss";
+
+//base
+@import "base/_common.scss";
+
+//layouts
+@import "layouts/_footer.scss";
+@import "layouts/_main-content.scss";
+@import "layouts/_nav.scss";
+
+//componenets
+@import "components/_breadcrumb.scss";
+@import "components/_buttons.scss";
+@import "components/_imageviwer.scss";

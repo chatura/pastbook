@@ -1,0 +1,110 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: $light-gray-text;
+
+    @include breakpoint(large) {
+        width: 20%;
+        text-align: left;
+    }
+
+    &__heading {
+        font-size: 48px;
+    }
+    &__sub-heading {
+
+        font-size: 17px;
+    }
+}
+.desktop-helper {
+    @include breakpoint(large) {
+        display: flex;
+        justify-content: space-between;
+        width: 91%;
+        margin: 0 auto;
+    }
+
+}
+.mode-switch {
+    width: 30%;
+    display: flex;
+    /* align-self: center; */
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 20px 0px;
+    @include breakpoint(large) {
+        width: 100px;
+        margin: 0;
+    }
+    
+}
+.mode-switch {
+    .btn-img{
+        opacity: 0.2;
+        &__active {
+            background: transparent;
+            border: none;
+            opacity: 1;
+        }
+    }
+    
+}
+.logo {
+    &__image {
+        width: 70%;
+        margin-left: 20px;
+    }
+}
+.menu {
+
+}
+.image-viewer {
+    &__controller {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin: 25px 0;
+
+        @include breakpoint(medium) {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+        }
+        @include breakpoint(large) {
+            z-index: 900;
+            top: 40%;
+        }
+
+        &__count {
+            color: #848484;
+
+            @include breakpoint(large) {
+                display: none;
+            }
+        }
+        .btn-round {
+            @include breakpoint(large) {
+                background: #202020;
+    box-shadow: 0px 3px 8px 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid #3c3c3c;
+            }
+        }
+    }
+}
+.promo {
+    opacity: 0.32;
+    font-family: KulimPark-Bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    @include breakpoint(large) {
+        margin: 20px 0;
+    }
+}

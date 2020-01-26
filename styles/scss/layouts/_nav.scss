@@ -1,0 +1,10 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 25px 5px;
+
+    @include breakpoint(large) {
+        justify-content: flex-start;
+    }
+
+}
