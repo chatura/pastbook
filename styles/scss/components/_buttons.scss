@@ -15,6 +15,7 @@
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    border: none;
     @include breakpoint(medium) {
         width: 40%;
         
